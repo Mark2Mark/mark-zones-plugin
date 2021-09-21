@@ -1,8 +1,8 @@
   <p align="center">
-  <!--<img width="200" height="200" src="https://github.com/Mark2Mark/variable-font-preview/blob/main/Variable%20Font%20Preview%20X.glyphsReporter/Contents/Resources/VFP-Icon.png">-->
+  <!--<img width="200" height="200" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/Variable%20Font%20Preview%20X.glyphsReporter/Contents/Resources/VFP-Icon.png">-->
   </p>
 
-  # {{NAME}}
+  # Mark Zones
 
   This is a plugin for Glyphs 3.
 
@@ -52,7 +52,7 @@
     <li>👉 When you've completed the above, just click the <code>"Activate License"</code> button. Within a few seconds your product should be activated for full use!</li>
   </ol>
 
-  *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase {{NAME}}"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
+  *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
   </details>
 
   &nbsp;
@@ -70,7 +70,7 @@
 
   ⚠️ Note: The Coupon is **not** the License Code. Please don’t enter the Coupon Code into the field for your License Code!
 
-  *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase {{NAME}}"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
+  *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
 
   If you can’t see the <code>»Add Coupon«</code>, that’s likely to a reported GlyphsApp bug, switching to Dark Mode and opening the window again might solve it.
 </details>
@@ -80,5 +80,5 @@
 ---
 
 <p align="center">
-  <!--<img src="https://github.com/Mark2Mark/{{NAME}}/blob/main/.images/Plugin%20Manager%20-%20Variable%20Font%20Preview.jpg?raw=true">-->
+  <!--<img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Plugin%20Manager%20-%20Variable%20Font%20Preview.jpg?raw=true">-->
 </p>
