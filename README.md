@@ -10,6 +10,32 @@
 
   ⚠️ Do not download directly from here. Please install via GlyphsApp’s Plugin Manager ⚠️
 
+  ## What does it do?
+
+  - Display Zones per master per script
+
+  ### Types of Zones
+  - Zones as *pair*
+  - Zones as *guide line*
+  - Either type of zone can have an overshoot
+    - Pairs’ overshoots go into both directions away from the zone.
+    - Lines’ overshoots go up for y-positions higher than 0 and downwards otherwise.
+  - Nodes on zones will be highlighted if they are on a zone’s overshoot or exactly on the border of a zone.
+
+  ## How to use
+
+  ### To create a zone, you have to options:
+  a) Create it from scratch:
+  - In `Font Info` > `Masters` add a new Custom Parameter for each desired master, called *`MarkZones`*
+  b) From a selection:
+  - You can select a path or some nodes and use the context menu (right click into the Edit View) > `Make Mark Zone`, which will create a zone from the selection’s vertical dimensions.
+  Then you can adjust the created zone in a iser interface by clicking on the custom parameter.
+
+  ## NOTES:
+  - It is best to hide the GlyphsApp metrics (`⌘+⇧+M`), because this plugin draws its own metrics
+  - Zone Names can have spaces or hyphens
+  - If a Zone is called _"Anchors"_, all anchors that are _not_ on one of those zones will be highlighted
+  - You can toggle activation of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
 
   &nbsp;
   ## Highlights
@@ -20,6 +46,10 @@
   ## Todo
 
   - See [issues](https://github.com/Mark2Mark/mark-zones-plugin/issues)
+
+  ## Bugs
+
+  - Currently Italic angle is not supported
 
   &nbsp;
   ## Changelog
@@ -81,8 +111,10 @@
 
 <p align="center">
   <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
+  Ecample with some zones active
 </p>
 
 <p align="center">
   <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
+  User Interface for the Custom Parameter
 </p>
