@@ -54,9 +54,6 @@
 
   - See [issues](https://github.com/Mark2Mark/mark-zones-plugin/issues)
 
-  ## Bugs
-
-  - Currently Italic angle is not supported
 
   &nbsp;
   ## Changelog
