@@ -32,13 +32,12 @@
   b) From a selection:
   - You can select a path or some nodes and use the context menu (right click into the Edit View) > `Make Mark Zone`, which will create a zone from the selection’s vertical dimensions.
   
-  Then you can adjust the created zone in a iser interface by clicking on the custom parameter.
+  Then you can adjust the created zone in the user interface by clicking on the custom parameter.
 
   ## NOTES:
   - It is best to hide the GlyphsApp metrics (`⌘+⇧+M`), because this plugin draws its own metrics
-  - Zone Names can have spaces or hyphens
   - If a Zone is called _"Anchors"_, all anchors that are _not_ on one of those zones will be highlighted
-  - You can toggle activation of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
+  - You can toggle display of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
 
   &nbsp;
   ## Highlights
