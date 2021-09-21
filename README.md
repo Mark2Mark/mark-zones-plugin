@@ -118,10 +118,10 @@
 
 <p align="center">
   <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
-  <p>Example with some zones active</p>
+  <p align="center">Example with some zones active</p>
 </p>
 
 <p align="center">
   <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
-  <p>User Interface for the Custom Parameter</p>
+  <p align="center">User Interface for the Custom Parameter</p>
 </p>
