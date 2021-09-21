@@ -39,9 +39,11 @@
   Then you can adjust the created zone in the user interface by clicking on the custom parameter.
 
   ## NOTES:
-  - It is best to hide the GlyphsApp metrics (`⌘+⇧+M`), because this plugin draws its own metrics
+  - You can have multiple zones (even of the 2 different kinds) in one custom parameter. That way you can group them under the same name and color.
+  - But you can have also multiple MarkZone custom parameters per master, go wild!
   - If a Zone is called _"Anchors"_, all anchors that are _not_ on one of those zones will be highlighted
   - Nodes on zones will be highlighted if they are on a zone’s overshoot or exactly on the border of a zone.
+  - It is best to hide the GlyphsApp metrics (`⌘+⇧+M`), because this plugin draws its own metrics
   - You can toggle display of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
 
   &nbsp;
