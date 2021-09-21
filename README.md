@@ -82,3 +82,7 @@
 <p align="center">
   <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
 </p>
+
+<p align="center">
+  <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
+</p>
