@@ -38,7 +38,7 @@
   
   Then you can adjust the created zone in the user interface by clicking on the custom parameter.
 
-  ## NOTES:
+  ## NOTES
   - You can have multiple zones (even of the 2 different kinds) in one custom parameter. That way you can group them under the same name and color.
   - But you can have also multiple MarkZone custom parameters per master, go wild!
   - If a Zone is called _"Anchors"_, all anchors that are _not_ on one of those zones will be highlighted
