@@ -80,5 +80,5 @@
 ---
 
 <p align="center">
-  <!--<img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Plugin%20Manager%20-%20Variable%20Font%20Preview.jpg?raw=true">-->
+  <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
 </p>
