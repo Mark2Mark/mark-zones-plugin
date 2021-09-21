@@ -121,6 +121,8 @@
   <p align="center">Example with some zones active</p>
 </p>
 
+<p></p>
+
 <p align="center">
   <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
   <p align="center">User Interface for the Custom Parameter</p>
