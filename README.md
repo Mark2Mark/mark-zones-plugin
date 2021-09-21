@@ -16,12 +16,16 @@
   Optionally with a name and overshoot, or dashed if it’s just a line.
 
   ### Types of Zones
+  
   - Zones as *pair*
+  
   - Zones as *guide line*
   
-  Either type of zone can have an overshoot
-    - Pairs’ overshoots go into both directions away from the zone.
-    - Lines’ overshoots go up for y-positions higher than 0 and downwards otherwise.
+  Either type of zone can have an overshoot  
+  
+  - Pairs’ overshoots go into both directions away from the zone.
+  
+  - Lines’ overshoots go up for y-positions higher than 0 and downwards otherwise.
 
   ## How to use
 
