@@ -12,7 +12,8 @@
 
   ## What does it do?
 
-  - Display Zones per master per script
+  Display Zones per master, per script in different colors.
+  Optionally with a name and overshoot, or dashed if it’s just a (guide)line.
 
   ### Types of Zones
   - Zones as *pair*
