@@ -118,10 +118,10 @@
 
 <p align="center">
   <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
-  Ecample with some zones active
+  <p>Example with some zones active</p>
 </p>
 
 <p align="center">
   <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
-  User Interface for the Custom Parameter
+  <p>User Interface for the Custom Parameter</p>
 </p>
