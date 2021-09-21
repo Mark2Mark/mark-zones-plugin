@@ -1,5 +1,5 @@
   <p align="center">
-  <img width="200" height="200" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/Variable%20Font%20Preview%20X.glyphsReporter/Contents/Resources/Mark-Zones-Icon.png">
+  <img width="200" height="200" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark-Zones-Icon.png?raw=true">
   </p>
 
   # Mark Zones
