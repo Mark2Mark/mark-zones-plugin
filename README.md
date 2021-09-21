@@ -18,10 +18,10 @@
   ### Types of Zones
   - Zones as *pair*
   - Zones as *guide line*
+  
   Either type of zone can have an overshoot
     - Pairs’ overshoots go into both directions away from the zone.
     - Lines’ overshoots go up for y-positions higher than 0 and downwards otherwise.
-  - Nodes on zones will be highlighted if they are on a zone’s overshoot or exactly on the border of a zone.
 
   ## How to use
 
@@ -37,6 +37,7 @@
   ## NOTES:
   - It is best to hide the GlyphsApp metrics (`⌘+⇧+M`), because this plugin draws its own metrics
   - If a Zone is called _"Anchors"_, all anchors that are _not_ on one of those zones will be highlighted
+  - Nodes on zones will be highlighted if they are on a zone’s overshoot or exactly on the border of a zone.
   - You can toggle display of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
 
   &nbsp;
