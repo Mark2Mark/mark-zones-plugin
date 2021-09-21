@@ -84,5 +84,5 @@
 </p>
 
 <p align="center">
-  <img width="400" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
+  <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
 </p>
