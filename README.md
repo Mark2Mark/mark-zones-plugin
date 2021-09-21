@@ -121,7 +121,9 @@
   <p align="center">Example with some zones active</p>
 </p>
 
-<p></p>
+<br>
+<br>
+<br>
 
 <p align="center">
   <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
