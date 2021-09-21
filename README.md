@@ -17,14 +17,12 @@
 
   ### Types of Zones
   
-  - Zones as *pair*
+  - Zones as *`pair`*
+  - Zones as *`guide line`*
   
-  - Zones as *guide line*
-  
-  Either type of zone can have an overshoot  
+  Either type of zone can have an overshoot:  
   
   - Pairs’ overshoots go into both directions away from the zone.
-  
   - Lines’ overshoots go up for y-positions higher than 0 and downwards otherwise.
 
   ## How to use
