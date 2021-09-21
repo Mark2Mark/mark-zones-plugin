@@ -13,12 +13,12 @@
   ## What does it do?
 
   Display Zones per master, per script in different colors.
-  Optionally with a name and overshoot, or dashed if it’s just a (guide)line.
+  Optionally with a name and overshoot, or dashed if it’s just a line.
 
   ### Types of Zones
   - Zones as *pair*
   - Zones as *guide line*
-  - Either type of zone can have an overshoot
+  Either type of zone can have an overshoot
     - Pairs’ overshoots go into both directions away from the zone.
     - Lines’ overshoots go up for y-positions higher than 0 and downwards otherwise.
   - Nodes on zones will be highlighted if they are on a zone’s overshoot or exactly on the border of a zone.
@@ -28,8 +28,10 @@
   ### To create a zone, you have to options:
   a) Create it from scratch:
   - In `Font Info` > `Masters` add a new Custom Parameter for each desired master, called *`MarkZones`*
+  
   b) From a selection:
   - You can select a path or some nodes and use the context menu (right click into the Edit View) > `Make Mark Zone`, which will create a zone from the selection’s vertical dimensions.
+  
   Then you can adjust the created zone in a iser interface by clicking on the custom parameter.
 
   ## NOTES:
