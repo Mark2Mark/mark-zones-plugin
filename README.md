@@ -10,6 +10,7 @@
 
   ⚠️ Do not download directly from here. Please install via GlyphsApp’s Plugin Manager ⚠️
 
+  &nbsp;
   ## What does it do?
 
   Display Zones per master, per script in different colors.
@@ -25,6 +26,7 @@
   - `Pair` overshoots go into both directions away from the zone.
   - `Line` overshoots go up for y-positions higher than 0 and downwards otherwise.
 
+  &nbsp;
   ## How to use
 
   ### To create a zone, you have to options:
@@ -35,6 +37,8 @@
   - You can select a path or some nodes and use the context menu (right click into the Edit View) > `Make Mark Zone`, which will create a zone from the selection’s vertical dimensions.
   
   Then you can adjust the created zone in the user interface by clicking on the custom parameter.
+  
+  &nbsp;
 
   ## NOTES
   - You can have multiple zones (even of the 2 different kinds) in one custom parameter. That way you can group them under the same name and color.
@@ -45,11 +49,7 @@
   - You can toggle display of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
 
   &nbsp;
-  ## Highlights
 
-  - You can now download it directly from the Plugin Manager right inside of GlyphsApp.
-
-  &nbsp;
   ## Todo
 
   - See [issues](https://github.com/Mark2Mark/mark-zones-plugin/issues)
