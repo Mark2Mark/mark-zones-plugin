@@ -4,6 +4,8 @@
 
   # Mark Zones
 
+  [![made with heart by Mark Frömberg](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-mark%20frömberg-F9DE64.svg?style=flat)](https://github.com/Mark2Mark)
+
   This is a plugin for Glyphs 3.
 
   💡 Minimum Glyphs version: build <code>3062</code>.
