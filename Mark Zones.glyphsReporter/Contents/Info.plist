@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20F71</string>
+	<string>21G419</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>Mark Zones</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.markfromberg.Mark-Zones</string>
+	<string>com.markfromberg.Mark_Zones</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,40 +17,40 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.1.1</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>5</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12B45b</string>
+	<string>14A400</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>12.3</string>
 	<key>DTSDKBuild</key>
-	<string>20A2408</string>
+	<string>21E226</string>
 	<key>DTSDKName</key>
-	<string>macosx11.0</string>
+	<string>macosx12.3</string>
 	<key>DTXcode</key>
-	<string>1220</string>
+	<string>1401</string>
 	<key>DTXcodeBuild</key>
-	<string>12B45b</string>
+	<string>14A400</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.11</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© 2021 markfromberg.com | All rights reserved.</string>
+	<string>© 2023 markfromberg.com | All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Mark_Zones</string>
+	<string>MFMarkZones</string>
 	<key>UpdateFeedURL</key>
-	<string>https:</string>
+	<string>https://markfromberg.com</string>
 	<key>productPageURL</key>
-	<string>https:</string>
+	<string>https://markfromberg.com</string>
 	<key>productReleaseNotes</key>
-	<string>Enjoy this update</string>
+	<string>Enjoy this update. See more at https://markfromberg.com</string>
 </dict>
 </plist>
