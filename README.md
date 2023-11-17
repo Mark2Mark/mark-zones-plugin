@@ -94,21 +94,12 @@
   &nbsp;
   ## How to enter a coupon
   <details><summary>If you have a coupon, follow these steps to use it for a discount on your purchase [click to open]</summary>
-  <ol>
-    <li>👉 Make sure you have GlyphsApp 3 build <code>3062</code> or higher.</li>
-    <li>👉 If you haven't already, download the plugin directly in the GlyphsApp Plugin Manager and restart GlyphsApp once.</li>
-    <li>👉 When you activate the plugin, you'll be prompted with a window*, click the <code>"Buy Now"</code> button.</li>
-    <li>👉 On the screen that opens enter your Email address, and click <code>»Continue«</code>.</li>
-    <li>👉 Follow the form until it asks you to pay. But now click <code>»Add Coupon«</code> and then continue to pay.</li>
-    <li>👉 On success you should get an Email with a licence code.</li>
-    <li>👉 Use that to activate your license <a href="#how-to-activate-your-license"> (steps here).</a> </li>
-  </ol>
+  https://markfromberg.com/faq#apply_coupon
 
   ⚠️ Note: The Coupon is **not** the License Code. Please don’t enter the Coupon Code into the field for your License Code!
 
   *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
 
-  If you can’t see the <code>»Add Coupon«</code>, that’s likely to a reported GlyphsApp bug, switching to Dark Mode and opening the window again might solve it.
 </details>
 
 &nbsp;
