@@ -15,6 +15,12 @@
   &nbsp;
   ## What does it do?
 
+
+  > [!NOTE]
+  > This readme will be updated soon, describing all the new features and behaviour of this plugin. So long, this readme is a little outdated but gives you a basic idea.
+  > 
+
+
   Display Zones per master, per script in different colors.
   Optionally with a name and overshoot, or dashed if it’s just a line.
 
