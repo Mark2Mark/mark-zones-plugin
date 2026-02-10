@@ -122,6 +122,7 @@ The dialog has these sections:
 - Name a zone **"Anchors"** to get warnings for anchors that aren't on a defined zone position.
 - Group related zones (e.g. all x-height zones) into one parameter to share a name and color.
 - Use separate parameters for unrelated zone groups (e.g. uppercase vs lowercase).
+- You can also add a Mark Zones CP from Scratch by clicking the + Button in the Custom Parameters List in Font Info, typing `MarkZones` and hitting enter. 
 
 &nbsp;
 
