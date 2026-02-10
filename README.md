@@ -1,110 +1,195 @@
-  <p align="center">
+<p align="center">
   <img width="200" height="200" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark-Zones-Icon.png?raw=true">
-  </p>
+</p>
 
-  # Mark Zones
+# Mark Zones
 
-  [![made with heart by Mark Frömberg](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-mark%20frömberg-F9DE64.svg?style=flat)](https://github.com/Mark2Mark)
+[![made with heart by Mark Frömberg](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-mark%20frömberg-F9DE64.svg?style=flat)](https://github.com/Mark2Mark)
 
-  This is a plugin for Glyphs 3.
+A reporter plugin for **Glyphs 3** that displays custom reference zones per master in the Edit View. Define zones by position, thickness, color, overshoot, and name — filtered per script, category, or any combination of glyph properties.
 
-  💡 Minimum Glyphs version: build <code>3062</code>.
+Minimum Glyphs version: build `3062`.
 
-  ⚠️ Do not download directly from here. Please install via GlyphsApp’s Plugin Manager ⚠️
+> Do not download directly from here. Please install via GlyphsApp's Plugin Manager.
 
-  &nbsp;
-  ## What does it do?
+&nbsp;
+
+## Features
+
+### Zone Types
+
+- **Thick zones** (pair) — a filled band between a position and a thickness. Bordered by solid lines with a curly brace and label on the left.
+- **Line zones** — a dashed horizontal line at a single y-position (thickness = 0).
+
+Both types support overshoots:
+
+- **Thick zone** overshoots extend outward in both directions (above and below the zone).
+- **Line zone** overshoots extend upward for positions above 0, downward otherwise.
+
+--IMAGE HERE
+
+### Glyph Filtering
+
+Zones are only displayed for glyphs that match the filter. The filter uses a Predicate Editor (like you know from other locations in Glyphs, like Global Guidelines) that lets you combine conditions on:
+
+- **Script** (e.g. Latin, Hangul, Thai)
+- **Category** (e.g. Letter, Number, Mark)
+- **Subcategory** (e.g. Uppercase, Lowercase, Smallcaps)
+- **Name** (contains, begins with, ends with)
+- **Case** (uppercase, lowercase, smallCaps, etc.)
+- **Tags** (contains)
+
+Combine multiple conditions with **All** (AND) or **Any** (OR) logic.
+
+Note: Legacy zone definitions using the old `Script + Script` syntax are automatically converted to predicate filters when opened in the UI.
+
+### Node and Anchor Highlighting
+
+- **Nodes** in an overshoot region are highlighted with a filled circle. Nodes exactly on the zone border are shown as a filled diamond.
+- **Selected nodes** get a larger highlight.
+- **Anchors** in an overshoot region are highlighted similarly.
+- If a zone is named **"Anchors"**, any anchor that is *not* on one of those zone positions is highlighted in orange as a warning.
+
+--IMAGE HERE
+
+### Zone Dragging
+
+Hold **Cmd** and hover over a zone border to see a grab cursor. Then **Cmd-drag** to reposition the zone edge directly in the Edit View:
+
+- Dragging the **bottom** edge of a thick zone moves the entire zone (position changes, thickness stays).
+- Dragging the **top** edge of a thick zone resizes it (position stays, thickness changes).
+- Dragging a **line zone** moves it to a new y-position.
+
+While dragging, a dashed preview shows the new position along with live position/thickness labels.
+
+### Linked Glyphs
+
+Each zone can have **linked glyphs** — other glyphs whose outlines are transformed when you drag the zone. Each linked glyph has a **stretch** setting:
+
+- **Stretch** (1): scales the linked glyph proportionally to the zone resize.
+- **Raise** (0): moves the linked glyph without stretching, keeping its relative position within the zone.
+
+This is useful for adjusting diacritics or other dependent shapes when changing vertical metrics. This also respects the italic angle and stretches or raises the glyphs along the italic angle.
+
+### Italic Angle Support
+
+All zone rendering respects the master's italic angle. Zones, overshoots, labels, braces, and drag previews are all sheared correctly.
+
+### Mark Zone Center Line
+
+For glyphs in the **Mark** category, a dotted center line is drawn inside thick zones to help with vertical alignment of combining marks.
+
+### Context Menu: "New Mark Zone from Selection"
+
+Right-click in the Edit View to create a new `MarkZones` custom parameter from the current selection's vertical bounds. The zone is added to the current master with a default color, overshoot of 10, and the glyph's script.
+
+### Per-Master, Per-Parameter Control
+
+- Zones are defined as `MarkZones` custom parameters on font masters in **Font Info > Masters**.
+- You can have **multiple zones** within a single parameter (grouped under the same name and color).
+- You can have **multiple MarkZones parameters** per master for different groups.
+- **Toggle visibility** of any zone group via the custom parameter checkbox — disable it to hide the zones without deleting the definition.
+- Zones are hidden when the **Space key** is held or the **Text tool** is active.
+
+&nbsp;
+
+## Custom Parameter UI
+
+Click a `MarkZones` custom parameter to open its editor:
+
+<p align="center">
+  <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
+  <br>
+  <em>Custom Parameter editor with filter, zones, and linked glyphs</em>
+</p>
+
+The dialog has these sections:
+
+| Section | Description |
+|---|---|
+| **Filter** | Predicate editor for script/category/name conditions |
+| **Name** | Display name shown next to the zone in the Edit View |
+| **Overshoot** | Overshoot distance in units |
+| **Color** | Zone color (with alpha support) |
+| **Zones** | Table of zone positions and thicknesses |
+| **Linked Glyphs** | Table of glyph names and stretch/raise behavior |
+
+&nbsp;
+
+## Tips
+
+- It is best to hide GlyphsApp's built-in metrics (`Cmd + Shift + M`), because this plugin draws its own metric lines.
+- Name a zone **"Anchors"** to get warnings for anchors that aren't on a defined zone position.
+- Group related zones (e.g. all x-height zones) into one parameter to share a name and color.
+- Use separate parameters for unrelated zone groups (e.g. uppercase vs lowercase).
+
+&nbsp;
+
+## Custom Parameter Format
+
+The raw value stored in the `MarkZones` parameter follows this format:
+
+**Predicate format** (current):
+```
+?predicateString_Name: r,g,b,a; overshoot; (pos, thick); (pos); ...
+```
+
+**Legacy format** (still supported):
+```
+Script + Script_Name: r,g,b,a; overshoot; (pos, thick); (pos); ...
+```
+
+Zones with linked glyphs append `&{glyphName*stretch, ...}` after the position/thickness tuple.
+
+&nbsp;
+
+## Todo
+
+- See [issues](https://github.com/Mark2Mark/mark-zones-plugin/issues)
 
 
-  > [!NOTE]
-  > This readme will be updated soon, describing all the new features and behaviour of this plugin. So long, this readme is a little outdated but gives you a basic idea.
-  > 
+&nbsp;
+## Changelog
 
+<details><summary>Expand if you're curious.</summary>
 
-  Display Zones per master, per script in different colors.
-  Optionally with a name and overshoot, or dashed if it’s just a line.
+### v1.0.0
 
-  ### Types of Zones
-  
-  - Zones as *`pair`*
-  - Zones as *`line`*
-  
-  Either type of zone can have an overshoot:  
-  
-  - `Pair` overshoots go into both directions away from the zone.
-  - `Line` overshoots go up for y-positions higher than 0 and downwards otherwise.
+- New in GlyphsApp's Plugin Manager
+- Custom Parameter now has a UI, so you don't have to write it manually
 
-  &nbsp;
-  ## How to use
+</details>
 
-  ### To create a zone, you have to options:
-  a) Create it from scratch:
-  - In `Font Info` > `Masters` add a new Custom Parameter for each desired master, called *`MarkZones`*
-  
-  b) From a selection:
-  - You can select a path or some nodes and use the context menu (right click into the Edit View) > `Make Mark Zone`, which will create a zone from the selection’s vertical dimensions.
-  
-  Then you can adjust the created zone in the user interface by clicking on the custom parameter.
-  
-  &nbsp;
+&nbsp;
+## FAQ
+<details><summary>I can't find it in the Plugin Manager.</summary>
+You need to check if your GlyphsApp build is higher than <code>3062</code>.
+If Glyphs doesn't offer you a high enough version, enable GlyphsApp <code>Preferences</code> > <code>"Updates"</code> > <code>"Show cutting edge versions"</code>. Note: you can have several GlyphsApp versions installed side by side.
+</details>
 
-  ## NOTES
-  - You can have multiple zones (even of the 2 different kinds) in one custom parameter. That way you can group them under the same name and color.
-  - But you can have also multiple MarkZone custom parameters per master, go wild!
-  - If a Zone is called _"Anchors"_, all anchors that are _not_ on one of those zones will be highlighted
-  - Nodes on zones will be highlighted if they are on a zone’s overshoot or exactly on the border of a zone.
-  - It is best to hide the GlyphsApp metrics (`⌘+⇧+M`), because this plugin draws its own metrics
-  - You can toggle display of a zone via the checkbox for the Custom Parameter, if you want to keep but hide it
+&nbsp;
+## How to activate your license<a id="how-to-activate-your-license"></a>
+After your purchase, the license key should be set automatically for you. If it isn't:
+<details><summary>Activating the plugin is easy, just follow the simple steps [click to open]</summary>
+<ol>
+  <li>Make sure you have GlyphsApp 3 build <code>3062</code> or higher.</li>
+  <li>If you haven't already, download the plugin directly in the GlyphsApp Plugin Manager and restart GlyphsApp once.</li>
+  <li>When you activate the plugin, you'll be prompted with a window*, click the <code>"Enter License"</code> button.</li>
+  <li>On the screen that opens enter your Email address, and the license code from your Email.</li>
+  <li>When you've completed the above, just click the <code>"Activate License"</code> button. Within a few seconds your product should be activated for full use!</li>
+</ol>
 
-  &nbsp;
+*) If the window doesn't show, you can right-click into the Edit Tab (that's the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin's Preview box and click <code>"Open Registration Window"</code>.
+</details>
 
-  ## Todo
+&nbsp;
+## How to enter a coupon
+<details><summary>If you have a coupon, follow these steps to use it for a discount on your purchase [click to open]</summary>
+https://markfromberg.com/faq#apply_coupon
 
-  - See [issues](https://github.com/Mark2Mark/mark-zones-plugin/issues)
+Note: The Coupon is **not** the License Code. Please don't enter the Coupon Code into the field for your License Code!
 
-
-  &nbsp;
-  ## Changelog
-
-  <details><summary>Expand if you’re curious.</summary>
-
-  ### v1.0.0
-
-  - New in GlyphsApp's Plugin Manager
-  - Custom Parameter now as a UI, so you don’t have to write it manually
-
-  </details>
-
-  &nbsp;
-  ## FAQ
-  <details><summary>🙋 I can’t find it in the Plugin Manager.</summary>
-  ➡️ You need to check if your GlyphsApp build is higher than <code>3062</code>.  
-  If Glyphs doesn’t offer you a high enough version, enable activate GlyphsApp <code>Preferences</code> > <code>"Updates"</code> > <code>“Show cutting edge versions”</code>. Note: you can have several GlyphsApp versions
-  </details>
-
-  &nbsp;
-  ## How to activate your license<a id="how-to-activate-your-license"></a>  
-  After your purchase, the license key should be set automatically for you. If it isn’t:  
-  <details><summary>Activating the plugin is easy, just follow the simple steps [click to open]</summary>
-  <ol>
-    <li>👉 Make sure you have GlyphsApp 3 build <code>3062</code> or higher.</li>
-    <li>👉 If you haven't already, download the plugin directly in the GlyphsApp Plugin Manager and restart GlyphsApp once.</li>
-    <li>👉 When you activate the plugin, you'll be prompted with a window*, click the <code>"Enter License"</code> button.</li>
-    <li>👉 On the screen that opens enter your Email address, and the license code from your Email.</li>
-    <li>👉 When you've completed the above, just click the <code>"Activate License"</code> button. Within a few seconds your product should be activated for full use!</li>
-  </ol>
-
-  *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
-  </details>
-
-  &nbsp;
-  ## How to enter a coupon
-  <details><summary>If you have a coupon, follow these steps to use it for a discount on your purchase [click to open]</summary>
-  https://markfromberg.com/faq#apply_coupon
-
-  ⚠️ Note: The Coupon is **not** the License Code. Please don’t enter the Coupon Code into the field for your License Code!
-
-  *) If the window doesn’t show, you can right-click into the Edit Tab (that’s the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin’s Preview box and click <code>"Open Registration Window"</code>.
+*) If the window doesn't show, you can right-click into the Edit Tab (that's the window where you do your drawings) and in the context menu click <code>"Purchase Mark Zones"</code>. Alternatively you can right click into the plugin's Preview box and click <code>"Open Registration Window"</code>.
 
 </details>
 
@@ -115,11 +200,4 @@
 <p align="center">
   <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
   <p align="center">Example with some zones active</p>
-</p>
-
-<br>
-
-<p align="center">
-  <img width="300" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
-  <p align="center">User Interface for the Custom Parameter</p>
 </p>
