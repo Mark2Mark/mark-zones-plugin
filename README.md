@@ -16,7 +16,14 @@ Minimum Glyphs version: build `3062`.
 
 <p align="center">
   <img width="" height="" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-Hero-Light-Pad.png?raw=true">
+  <p align="center">In use with Latin script</p>
 </p>
+
+<p align="center">
+  <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
+  <p align="center">In use with Thai script</p>
+</p>
+
 
 ## Features
 
@@ -214,9 +221,3 @@ Note: The Coupon is **not** the License Code. Please don't enter the Coupon Code
 
 &nbsp;
 
----
-
-<p align="center">
-  <img src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones.png?raw=true">
-  <p align="center">Example with some zones active</p>
-</p>
