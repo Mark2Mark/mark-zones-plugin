@@ -75,6 +75,10 @@ Hold **Cmd** and hover over a zone border to see a grab cursor. Then **Cmd-drag*
 
 While dragging, a dashed preview shows the new position along with live position/thickness labels.
 
+### Zone Editing
+
+**Cmd-double-click** a zone edge in the Edit View to open the Custom Parameter UI as a sheet — pre-filled with the clicked zone's properties. Edit name, color, filter, overshoot, zone positions, or linked glyphs without navigating to Font Info. Cancel discards all changes; OK applies them immediately.
+
 ### Linked Glyphs
 
 Each zone can have **linked glyphs** — other glyphs whose outlines are transformed when you drag the zone. Each linked glyph has a **stretch** setting:
