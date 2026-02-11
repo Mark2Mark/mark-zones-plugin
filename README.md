@@ -85,6 +85,10 @@ All zone rendering respects the master's italic angle. Zones, overshoots, labels
 
 For glyphs in the **Mark** category, a dotted center line is drawn inside thick zones to help with vertical alignment of combining marks.
 
+<p align="center">
+  <img width="" height="400" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-Center.png?raw=true">
+</p>
+
 ### Context Menu: "New Mark Zone from Selection"
 
 Right-click in the Edit View to create a new `MarkZones` custom parameter from the current selection's vertical bounds. Instead of silently adding a zone with defaults, the **Custom Parameter UI opens as a sheet** — letting you edit the name, color, overshoot, filter, and zone positions before committing.
@@ -108,6 +112,11 @@ Click a `MarkZones` custom parameter to open its editor:
 
 <p align="center">
   <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-1.png?raw=true">
+  <br>
+  <em>Custom Parameter editor with filter, zones, and linked glyphs</em>
+</p>
+<p align="center">
+  <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-2.png?raw=true">
   <br>
   <em>Custom Parameter editor with filter, zones, and linked glyphs</em>
 </p>
