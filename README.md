@@ -88,6 +88,14 @@ Each zone can have **linked glyphs** — other glyphs whose outlines are transfo
 
 This is useful for adjusting diacritics or other dependent shapes when changing vertical metrics. This also respects the italic angle and stretches or raises the glyphs along the italic angle.
 
+### Undo & Redo
+
+All zone edits made in the Edit View support **Cmd+Z** (undo) and **Cmd+Shift+Z** (redo):
+
+- **Zone dragging** — undo/redo restores the previous zone position or thickness.
+- **Zone editing via sheet** — undo/redo reverts or reapplies all changes made in the CP UI.
+- **New zone from selection** — undo removes the newly created custom parameter (including duplicates on other masters); redo re-adds it.
+
 ### Italic Angle Support
 
 All zone rendering respects the master's italic angle. Zones, overshoots, labels, braces, and drag previews are all sheared correctly.
