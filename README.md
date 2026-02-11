@@ -81,7 +81,10 @@ For glyphs in the **Mark** category, a dotted center line is drawn inside thick 
 
 ### Context Menu: "New Mark Zone from Selection"
 
-Right-click in the Edit View to create a new `MarkZones` custom parameter from the current selection's vertical bounds. The zone is added to the current master with a default color, overshoot of 10, and the glyph's script.
+Right-click in the Edit View to create a new `MarkZones` custom parameter from the current selection's vertical bounds. Instead of silently adding a zone with defaults, the **Custom Parameter UI opens as a sheet** — letting you edit the name, color, overshoot, filter, and zone positions before committing.
+
+- **Cancel** discards the zone entirely — nothing is saved.
+- **Apply to all masters** — when the font has multiple masters and the current glyph is compatible across all of them, a checkbox lets you duplicate the zone to every master. Each master gets its own overshoot (from its baseline metric) and zone positions (mapped from the corresponding nodes in that master's layer).
 
 ### Per-Master, Per-Parameter Control
 
