@@ -14,6 +14,10 @@ Minimum Glyphs version: build `3062`.
 
 &nbsp;
 
+<p align="center">
+  <img width="" height="" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-Hero-Light-Pad.png?raw=true">
+</p>
+
 ## Features
 
 ### Zone Types
@@ -26,7 +30,9 @@ Both types support overshoots:
 - **Thick zone** overshoots extend outward in both directions (above and below the zone).
 - **Line zone** overshoots extend upward for positions above 0, downward otherwise.
 
---IMAGE HERE
+<p align="center">
+  <img width="" height="400" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-ThickThin.png?raw=true">
+</p>
 
 ### Glyph Filtering
 
@@ -101,7 +107,7 @@ Right-click in the Edit View to create a new `MarkZones` custom parameter from t
 Click a `MarkZones` custom parameter to open its editor:
 
 <p align="center">
-  <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/Mark%20Zones%20UI.png?raw=true">
+  <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-1.png?raw=true">
   <br>
   <em>Custom Parameter editor with filter, zones, and linked glyphs</em>
 </p>
