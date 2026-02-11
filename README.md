@@ -111,14 +111,14 @@ Right-click in the Edit View to create a new `MarkZones` custom parameter from t
 Click a `MarkZones` custom parameter to open its editor:
 
 <p align="center">
-  <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-1.png?raw=true">
+  <img width="450" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-1.png?raw=true">
   <br>
-  <em>Custom Parameter editor with filter, zones, and linked glyphs</em>
+  <em>Custom Parameter editor with simple filter and 2 zones</em>
 </p>
 <p align="center">
-  <img width="350" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-2.png?raw=true">
+  <img width="450" src="https://github.com/Mark2Mark/mark-zones-plugin/blob/main/.images/MarkZones-UI-2.png?raw=true">
   <br>
-  <em>Custom Parameter editor with filter, zones, and linked glyphs</em>
+  <em>Custom Parameter editor with more complex filter, zones, and linked glyphs</em>
 </p>
 
 The dialog has these sections:
